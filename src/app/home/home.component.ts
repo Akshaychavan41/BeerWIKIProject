@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   items = [];
   pageOfItems: Array<any>;
   imageData: any;
-  errorMessage: String;
-  searchData: String;
+  errorMessage: string;
+  searchData: string;
   getData() {
     this.homeServiceService.getData().subscribe(
       data => this.data= data,
